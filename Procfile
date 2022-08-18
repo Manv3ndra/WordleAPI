@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT wordfinder_api:app
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
