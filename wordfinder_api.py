@@ -19,7 +19,7 @@ from fastapi import FastAPI, APIRouter
 app = FastAPI()
 
 @app.get("/")
-async def hello():
+def hello():
     return {"Hello World"}
 
 @app.get("/includes={good}&contains={perfect}")
