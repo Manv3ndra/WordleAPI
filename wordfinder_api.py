@@ -1,22 +1,26 @@
 import random
 from fastapi import FastAPI, APIRouter
 
-description = """
-This wordle API is made to return either a word or a list of words based on the parameters passed. This API was made because I couldn't find a API suited to my needs of my project. This API can only be accessed using Python. In case this API is used please attribute this website.
+# description = """
+# This wordle API is made to return either a word or a list of words based on the parameters passed. This API was made because I couldn't find a API suited to my needs of my project. This API can only be accessed using Python. In case this API is used please attribute this website.
 
-## Parameters
+# ## Parameters
 
-### <i>Perfect</i>
-This is a string which consists of the letters which are perfectly placed in the wordle string i.e. letters with a green background. <b>If the string is empty please pass 5 underscores i.e. "_____"</b>. The underscores are replaced according to the position of the letters in the perfect word.
+# ### <i>Perfect</i>
+# This is a string which consists of the letters which are perfectly placed in the wordle string i.e. letters with a green background. <b>If the string is empty please pass 5 underscores i.e. "_____"</b>. The underscores are replaced according to the position of the letters in the perfect word.
 
-### <i>Good</i>
-This is a string which consists of the letters which are present in the wordle string but not in the correct position i.e. letters with a yellow background.
+# ### <i>Good</i>
+# This is a string which consists of the letters which are present in the wordle string but not in the correct position i.e. letters with a yellow background.
 
-### <i>Bad</i>
-This is a string which consists of the letters which are not present in the wordle string i.e. letters with a black background.
-"""
+# ### <i>Bad</i>
+# This is a string which consists of the letters which are not present in the wordle string i.e. letters with a black background.
+# """
 
-app = FastAPI(docs_url='/',description = description)
+app = FastAPI()
+
+@app.get("/")
+async def hello():
+    return {"Hello World"}
 
 @app.get("/includes={good}&contains={perfect}")
 async def only_good_and_perfect_string_present(good, perfect : str = "_____"):
