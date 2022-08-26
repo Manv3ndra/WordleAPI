@@ -5065,4 +5065,4 @@ async def all_strings_present_but_return_type_list(perfect, good, bad):
         return temp
 
 if __name__ == "__main__":
-uvicorn.run("fastapi_code:app")
+uvicorn.run("main:app")
