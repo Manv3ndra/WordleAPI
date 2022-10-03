@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'Hello Welcome to my API'
 
 @app.route('/good&perfect/<string:good>/<string:perfect>')
 def only_good_and_perfect_string_present(good, perfect):
