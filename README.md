@@ -10,12 +10,12 @@ The API is deployed on pythonanywhere.com at [manvendra27.pythonanywhere.com](ht
 ```python
 import requests
 
-response = requests.get('manvendra27.pythonanywhere.com/<conditions>')
+response = requests.get('manvendra27.pythonanywhere.com/<parameters>')
 ```
 
-"conditions" are the conditions according to the user, which consists of strings i.e. the string which are present, not present, perfectly present in the word.
+"parameters" are the conditions according to the user, which consists of strings i.e. the string which are present, not present, perfectly present in the word.
 
-## Conditions
+## Parameters
 
 The following functions are supposed to be appended at the end of manvendra.pythonanywhere.com while calling the API
 
