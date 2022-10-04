@@ -72,3 +72,12 @@ If you want a list of all the words possible for a certain condition add "/list"
 </ul>
 
 This would return a list of all the words in a JSON format i.e. {words: [mayor, marsh, march......]}
+
+## Scope for Improvement/Help Needed
+<ul>
+<li>I would like to simplify the code from having almost 4000-5000 lines of if-else statements.
+<li>I would like the code to display the API swagger documentation on the home page.
+<li>The code is currently deployed on pythonanywhere.com because I ran into some errors while trying to deploy it on heroku. I would like some help on this issue.
+</ul>
+
+<h4 align="center">Made with ❤ by <a href="https://github.com/Manv3ndra">Manvendra Prasad</a></h4>
