@@ -80,4 +80,4 @@ This would return a list of all the words in a JSON format i.e. {words: [mayor, 
 <li>The code is currently deployed on pythonanywhere.com because I ran into some errors while trying to deploy it on heroku. I would like some help on this issue.
 </ul>
 
-<h4 align="center">Made with ❤ by <a href="https://github.com/Manv3ndra">Manvendra Prasad</a></h4>
+<h4 align="center">Made with ❤ by <a href="https://manv3ndra.github.io/manvendra.github.io/">Manvendra Prasad</a></h4>
